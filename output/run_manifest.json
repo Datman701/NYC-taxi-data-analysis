@@ -1,0 +1,41 @@
+{
+  "run_id": "20260927_150114",
+  "started_at": "2026-09-27T09:31:14.879897+00:00",
+  "finished_at": "2026-09-27T09:31:46.561968+00:00",
+  "status": "COMPLETED",
+  "gate": "PUBLISH",
+  "git_commit": null,
+  "log_file": "logs/run_20260927_150114.log",
+  "steps": [
+    {
+      "name": "api_fetch",
+      "status": "SKIPPED(12 months present)"
+    },
+    {
+      "name": "ingest",
+      "status": "OK",
+      "seconds": 1.0
+    },
+    {
+      "name": "validate",
+      "status": "OK",
+      "seconds": 11.3
+    },
+    {
+      "name": "transform",
+      "status": "OK",
+      "seconds": 12.2
+    },
+    {
+      "name": "metrics",
+      "status": "OK",
+      "seconds": 7.2
+    }
+  ],
+  "row_counts": {
+    "raw_rows": 38310122,
+    "valid_rows": 37532268,
+    "quarantined_rows": 777854
+  },
+  "idempotency": "raw immutable; outputs rewritten atomically; rerun \u2192 same metrics"
+}

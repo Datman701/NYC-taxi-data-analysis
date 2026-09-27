@@ -1,0 +1,290 @@
+{
+  "retrieved_at": "2026-09-24T19:43:39.931796+00:00",
+  "sources": {
+    "zone_lookup_csv": {
+      "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "file": "data/reference/taxi_zone_lookup.csv",
+      "bytes": 12331,
+      "http": 200,
+      "sha256_header": null
+    },
+    "zone_lookup_api": {
+      "dataset": "8meu-9t5y",
+      "pages": [
+        {
+          "page": 1,
+          "rows": 263,
+          "file": "page_0001.json",
+          "bytes": 3877766,
+          "http": 200
+        }
+      ],
+      "page_count": 1,
+      "rows_fetched": 263,
+      "raw_dir": "data/reference/socrata_taxi_zones"
+    },
+    "zone_count_check": {
+      "count": 263,
+      "status": "OK",
+      "seconds": 1.2
+    }
+  },
+  "trips": {
+    "trips_2023:2023": {
+      "dataset": "4b4i-vvec",
+      "year": 2023,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "results": [
+        {
+          "month": "2023-01",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-01-01T00:00:00' AND tpep_pickup_datetime < '2023-02-01T00:00:00'",
+          "count_query": {
+            "count": 3066726,
+            "status": "OK",
+            "seconds": 16.1
+          },
+          "rows": 3066726,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-01.parquet",
+          "sha256": "3656295856c88c526347bd0283df28eb4ab9fcf2b95ec466513a391eae660478",
+          "bytes": 41491348,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-02",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-02-01T00:00:00' AND tpep_pickup_datetime < '2023-03-01T00:00:00'",
+          "count_query": {
+            "count": 2914003,
+            "status": "OK",
+            "seconds": 3.5
+          },
+          "rows": 2914003,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-02.parquet",
+          "sha256": "5fdca8ad356755f2aacb773a2aad1746e983220a7ece97f8403ab9064ae383e8",
+          "bytes": 39194277,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-03",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-03-01T00:00:00' AND tpep_pickup_datetime < '2023-04-01T00:00:00'",
+          "count_query": {
+            "count": 3403660,
+            "status": "OK",
+            "seconds": 10.5
+          },
+          "rows": 3403660,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-03.parquet",
+          "sha256": "2a37f8d0ef41226f36bcf787d4c256ad2041a3c9b510b124776799ce35963260",
+          "bytes": 45714858,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-04",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-04-01T00:00:00' AND tpep_pickup_datetime < '2023-05-01T00:00:00'",
+          "count_query": {
+            "count": 3288248,
+            "status": "OK",
+            "seconds": 9.9
+          },
+          "rows": 3288248,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-04.parquet",
+          "sha256": "69d2f983feb38b62a6eb1c21bc5e62dd095215e4eb72a79e2e6e4d7820097488",
+          "bytes": 44399262,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-05",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-05-01T00:00:00' AND tpep_pickup_datetime < '2023-06-01T00:00:00'",
+          "count_query": {
+            "count": 3513664,
+            "status": "OK",
+            "seconds": 22.7
+          },
+          "rows": 3513664,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-05.parquet",
+          "sha256": "dfa2bd97b3af21bdcd01df5de250a534dcb8098d739d6e0cd1671af519e1a648",
+          "bytes": 47438361,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-06",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-06-01T00:00:00' AND tpep_pickup_datetime < '2023-07-01T00:00:00'",
+          "count_query": {
+            "count": 3307259,
+            "status": "OK",
+            "seconds": 6.3
+          },
+          "rows": 3307259,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-06.parquet",
+          "sha256": "5e72d307958a6b8e12aa83481cdf3686c990f8f3c174d0739a0351a48d966e2c",
+          "bytes": 44925841,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-07",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-07-01T00:00:00' AND tpep_pickup_datetime < '2023-08-01T00:00:00'",
+          "count_query": {
+            "count": 2907093,
+            "status": "OK",
+            "seconds": 6.0
+          },
+          "rows": 2907093,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-07.parquet",
+          "sha256": "f061aece3bb2423db61651ee4099a5b00c9968174e381a987e74e2bd0366967d",
+          "bytes": 40074110,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-08",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-08-01T00:00:00' AND tpep_pickup_datetime < '2023-09-01T00:00:00'",
+          "count_query": {
+            "count": 2824201,
+            "status": "OK",
+            "seconds": 10.1
+          },
+          "rows": 2824201,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-08.parquet",
+          "sha256": "608d1dbea15667006dd31199ba663097a24c10e84cd6396e3c08d453b19bc6a5",
+          "bytes": 39522261,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-09",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-09-01T00:00:00' AND tpep_pickup_datetime < '2023-10-01T00:00:00'",
+          "count_query": {
+            "count": 2846741,
+            "status": "OK",
+            "seconds": 4.4
+          },
+          "rows": 2846741,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-09.parquet",
+          "sha256": "3e23fdb2a4acef3a18600c8b8439eaf00ad19d1de536da0d2f499159bc817cfc",
+          "bytes": 39467513,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-10",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-10-01T00:00:00' AND tpep_pickup_datetime < '2023-11-01T00:00:00'",
+          "count_query": {
+            "count": 3522269,
+            "status": "OK",
+            "seconds": 2.1
+          },
+          "rows": 3522269,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-10.parquet",
+          "sha256": "a8cf0f008f7de950842b67e794d0953cd37e9658e5decf6246f6c80e145414e0",
+          "bytes": 48183613,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-11",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-11-01T00:00:00' AND tpep_pickup_datetime < '2023-12-01T00:00:00'",
+          "count_query": {
+            "count": 3339731,
+            "status": "OK",
+            "seconds": 14.7
+          },
+          "rows": 3339731,
+          "composite_key_duplicates": 2,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-11.parquet",
+          "sha256": "a4f2a7ceb671c169a3d51219d51904fc086746150fb04509c35ae406c32058d0",
+          "bytes": 45413690,
+          "seconds": 0.0
+        },
+        {
+          "month": "2023-12",
+          "status": "SKIPPED (parquet present)",
+          "dataset": "4b4i-vvec",
+          "where": "tpep_pickup_datetime >= '2023-12-01T00:00:00' AND tpep_pickup_datetime < '2024-01-01T00:00:00'",
+          "count_query": {
+            "count": 3376527,
+            "status": "OK",
+            "seconds": 4.5
+          },
+          "rows": 3376527,
+          "composite_key_duplicates": 0,
+          "match": true,
+          "verdict": "COMPLETE: COUNT(*) == parquet rows",
+          "parquet": "data/raw/yellow_tripdata_2023-12.parquet",
+          "sha256": "94bc1bfc49b2445ef5b0cb6ab56f77b24b2d45c5ee561a542ea8339eb5559004",
+          "bytes": 46398664,
+          "seconds": 0.0
+        }
+      ],
+      "totals": {
+        "months": 12,
+        "rows": 38310122,
+        "months_reconciled": 12,
+        "composite_key_duplicates": 2
+      },
+      "verdict": "ALL MONTHS RECONCILED: COUNT(*) == parquet rows"
+    }
+  },
+  "note": "2026-09-25: the earlier 2016 one-hour trip-slice retrieval was replaced by the full-year 2023 retrieval (see trips below)."
+}

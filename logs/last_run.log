@@ -1,0 +1,16 @@
+2026-09-26 16:40:10,513 INFO run 20260926_164010 | python 3.12.14 | git None
+2026-09-26 16:40:10,514 INFO STEP api_fetch SKIPPED (12 month parquet present; use --refresh-api)
+2026-09-26 16:40:10,514 INFO ──────────────────────────────
+2026-09-26 16:40:10,514 INFO STEP ingest start
+2026-09-26 16:40:10,984 INFO STEP ingest OK (0.5s)
+2026-09-26 16:40:10,984 INFO ──────────────────────────────
+2026-09-26 16:40:10,984 INFO STEP validate start
+2026-09-26 16:40:18,273 INFO STEP validate OK (7.3s)
+2026-09-26 16:40:18,273 INFO ──────────────────────────────
+2026-09-26 16:40:18,273 INFO STEP transform start
+2026-09-26 16:40:26,313 INFO STEP transform OK (8.0s)
+2026-09-26 16:40:26,313 INFO ──────────────────────────────
+2026-09-26 16:40:26,313 INFO STEP metrics start
+2026-09-26 16:40:31,158 INFO STEP metrics OK (4.8s)
+2026-09-26 16:40:31,158 INFO GATE: PUBLISH | coverage=0.9797 | valid=37532268 / 38310122
+2026-09-26 16:40:31,161 INFO run manifest → output/run_manifest.json

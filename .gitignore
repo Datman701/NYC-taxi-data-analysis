@@ -1,0 +1,29 @@
+# Derived data (GBs) never enters git — reproducible via `make fetch && make run`
+# (no trailing comments on pattern lines: git would treat them as part of the pattern)
+data/raw/*
+!data/raw/.gitkeep
+data/api_raw/*
+!data/api_raw/.gitkeep
+data/staged/*
+!data/staged/.gitkeep
+data/quarantine/*
+!data/quarantine/.gitkeep
+data/facts/*
+!data/facts/.gitkeep
+
+# logs: only the most recent run log ships as evidence
+logs/*
+!logs/.gitkeep
+!logs/last_run.log
+
+# outputs: metrics CSVs, reports and figures are small and ARE committed
+output/*.parquet
+
+# personal recording script — never pushed
+video_script.md
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/

@@ -1,0 +1,15 @@
+name: fde
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas
+  - pyarrow
+  - duckdb
+  - shapely
+  - matplotlib
+  - pytest
+  - jupyter
+  - nbformat
+  - ipykernel
+  - requests

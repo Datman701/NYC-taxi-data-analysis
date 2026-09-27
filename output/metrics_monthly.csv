@@ -1,0 +1,73 @@
+month,metric_id,metric_name,value,grain,formula,kpi_link
+2023-01,M1,valid_trip_rate,0.984994,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-01,M2,trip_time_reliability,0.800211,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-01,M3,trip_duration_typical,11.58,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-01,M3b,trip_duration_typical_p90,27.93,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-01,M4,invalid_trip_rate,0.015006,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-01,M5,slow_trip_share,0.087742,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-02,M1,valid_trip_rate,0.985716,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-02,M2,trip_time_reliability,0.774267,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-02,M3,trip_duration_typical,11.87,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-02,M3b,trip_duration_typical_p90,28.47,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-02,M4,invalid_trip_rate,0.014284,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-02,M5,slow_trip_share,0.097761,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-03,M1,valid_trip_rate,0.985601,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-03,M2,trip_time_reliability,0.741077,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-03,M3,trip_duration_typical,12.22,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-03,M3b,trip_duration_typical_p90,30.73,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-03,M4,invalid_trip_rate,0.014399,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-03,M5,slow_trip_share,0.119405,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-04,M1,valid_trip_rate,0.98768,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-04,M2,trip_time_reliability,0.733722,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-04,M3,trip_duration_typical,12.43,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-04,M3b,trip_duration_typical_p90,31.8,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-04,M4,invalid_trip_rate,0.01232,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-04,M5,slow_trip_share,0.121276,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-05,M1,valid_trip_rate,0.986586,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-05,M2,trip_time_reliability,0.686378,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-05,M3,trip_duration_typical,13.07,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-05,M3b,trip_duration_typical_p90,33.97,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-05,M4,invalid_trip_rate,0.013414,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-05,M5,slow_trip_share,0.147772,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-06,M1,valid_trip_rate,0.985529,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-06,M2,trip_time_reliability,0.699408,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-06,M3,trip_duration_typical,12.88,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-06,M3b,trip_duration_typical_p90,33.5,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-06,M4,invalid_trip_rate,0.014471,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-06,M5,slow_trip_share,0.14007,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-07,M1,valid_trip_rate,0.982752,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-07,M2,trip_time_reliability,0.733757,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-07,M3,trip_duration_typical,12.48,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-07,M3b,trip_duration_typical_p90,32.13,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-07,M4,invalid_trip_rate,0.017248,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-07,M5,slow_trip_share,0.127404,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-08,M1,valid_trip_rate,0.979555,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-08,M2,trip_time_reliability,0.744339,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-08,M3,trip_duration_typical,12.5,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-08,M3b,trip_duration_typical_p90,32.25,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-08,M4,invalid_trip_rate,0.020445,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-08,M5,slow_trip_share,0.114719,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-09,M1,valid_trip_rate,0.965276,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-09,M2,trip_time_reliability,0.632918,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-09,M3,trip_duration_typical,13.67,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-09,M3b,trip_duration_typical_p90,36.48,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-09,M4,invalid_trip_rate,0.034724,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-09,M5,slow_trip_share,0.195489,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-10,M1,valid_trip_rate,0.965382,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-10,M2,trip_time_reliability,0.639829,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-10,M3,trip_duration_typical,13.58,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-10,M3b,trip_duration_typical_p90,34.85,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-10,M4,invalid_trip_rate,0.034618,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-10,M5,slow_trip_share,0.184792,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-11,M1,valid_trip_rate,0.969003,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-11,M2,trip_time_reliability,0.637639,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-11,M3,trip_duration_typical,13.38,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-11,M3b,trip_duration_typical_p90,34.17,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-11,M4,invalid_trip_rate,0.030997,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-11,M5,slow_trip_share,0.199568,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2
+2023-12,M1,valid_trip_rate,0.978228,month,valid_rows / raw_rows (per month),gating metric — KPI is only published while M1 ≥ 90%
+2023-12,M2,trip_time_reliability,0.631749,month,"share of valid trips with duration_min <= expected_min(distance_band, time_bucket) where expected_min = P80 on baseline month",PROJECT KPI — this is the number leadership tracks
+2023-12,M3,trip_duration_typical,13.38,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-12,M3b,trip_duration_typical_p90,34.38,month (detail by hour),P50 and P90 of duration_min (valid trips),outcome detail — explains moves in M2
+2023-12,M4,invalid_trip_rate,0.021772,month,"quarantined_rows / raw_rows (per month); components: nonpositive duration, missing/out-of-bbox GPS, distance out of range","supporting — protects M2's denominator, must be disclosed with M2"
+2023-12,M5,slow_trip_share,0.207603,month (detail by hour),share of valid trips with avg speed < 6 mph; detail = same by pickup hour,driver metric — hours with high M5 have low M2

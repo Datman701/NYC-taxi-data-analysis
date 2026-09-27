@@ -1,0 +1,126 @@
+# Validation contract config — thresholds are DATA-DRIVEN and OWNED, never silent.
+# business assumption -> data expectation -> executable check -> action.
+# Every rule below lists an `owner`. Changing a threshold = stakeholder decision.
+#
+# Calibration note (2026-09-25): every tolerance below was set from measured 2023 rates
+# (38,310,122 rows), not carried over from the retired 2015-16 pack. Measured rate is noted
+# next to each rule so a future drift is visible at a glance.
+
+project:
+  name: NYC TLC yellow taxi monthly trip metrics — full year 2023
+  kpi: Trip Time Reliability
+  decision: "Publish or HOLD the monthly trip-performance report"
+
+zones:                           # TLC zone ids (no coordinates exist in this source)
+  max_zone_id: 265               # 1..263 real zones; 264 = Unknown, 265 = NA (outside NYC)
+  unresolved_zone_ids: [264, 265] # "location not known" — flagged (R14/R15), never guessed
+  airport_zone_ids: [1, 132]     # Newark Airport, JFK Airport
+  known_vendor_ids: [1, 2, 6]    # 6 observed in 2023, undocumented in the TLC guide (U4)
+  owner: FDE
+
+limits:
+  duration_min_seconds: 1        # strictly greater than 0
+  duration_max_seconds: 86400    # 24h — longer trips are treated as meter errors (assumption A3)
+  distance_max_miles: 200
+  money_tolerance_usd: 5.00      # absolute; 2023 measured: 0% of rows exceed $5, 3.3% exceed $2.50
+
+quarantine:                      # rules whose failure removes a trip from the KPI population
+  [R00, R01, R02, R03, R04, R05, R06]
+
+gate:
+  # HOLD the report if any rule's observed failure rate exceeds `tolerances.*.fail`,
+  # or if schema conformance fails (job abort), or if row conservation breaks,
+  # or if valid-row coverage falls below min_valid_coverage.
+  publish_label: PUBLISH
+  hold_label: HOLD
+  min_valid_coverage: 0.90       # KPI population must cover >= 90% of raw rows (2023: 97.97%)
+
+# Per-rule tolerance policy: fail_rate <= warn -> PASS, <= fail -> WARN, > fail -> FAIL (holds gate)
+tolerances:                      # observed 2023 rate -> chosen warn / fail
+  R00: {warn: 0.001, fail: 0.01}   # timestamps            observed 0.0000%
+  R01: {warn: 0.01,  fail: 0.05}   # dropoff <= pickup     observed 0.0406%
+  R02: {warn: 0.001, fail: 0.01}   # duration > 24h        observed 0.0006%
+  R03: {warn: 0.001, fail: 0.01}   # pickup outside month  observed 0.0000% (API partitions)
+  R04: {warn: 0.01,  fail: 0.05}   # pickup zone unknown   observed 0.0000%
+  R05: {warn: 0.01,  fail: 0.05}   # dropoff zone unknown  observed 0.0000%
+  R06: {warn: 0.02,  fail: 0.05}   # distance 0 or > 200mi observed 2.0215% (WARN, disclosed)
+  R07: {warn: 0.05,  fail: 0.10}   # passenger 0/7/8/9/null observed 4.9410%
+  R08: {warn: 0.02,  fail: 0.05}   # negative money        observed 1.0009%
+  R09: {warn: 0.02,  fail: 0.10}   # total vs components   observed 0.0000% at $5 tolerance (A7)
+  R10: {warn: 0.05,  fail: 0.10}   # ratecode null/99      observed 3.9750% (WARN, U1/U5)
+  R11: {warn: 0.05,  fail: 0.10}   # store_and_fwd null    observed 3.4178% (WARN, U5)
+  R12: {warn: 0.001, fail: 0.01}   # vendor not 1/2/6      observed 0.0000%
+  R13: {warn: 0.05,  fail: 0.10}   # payment_type 0        observed 3.4178% (WARN, U5)
+  R14: {warn: 0.02,  fail: 0.05}   # pickup zone 264/265   observed 1.0114%
+  R15: {warn: 0.02,  fail: 0.05}   # dropoff zone 264/265  observed 1.0290%
+
+assumptions:                     # recorded, not silently encoded
+  - id: A1
+    text: "1 row = 1 completed trip (TLC user guide). No trip ID exists, so the grain is
+           enforced by full-row conservation (staged + quarantined == raw) plus a composite-key
+           duplicate audit, instead of by a key."
+    owner: FDE / client data lead
+  - id: A2
+    text: "Socrata delivers the 2023 schema in lowercase with quoted CSV headers and no
+           coordinates. That is a REPRESENTATION difference (transport encoding + casing), not a
+           semantic one, so it is normalised in retrieval and never guessed."
+    owner: FDE (representation vs semantics call)
+  - id: A3
+    text: "Trips longer than 24h are meter errors, not real trips. Threshold is a judgement
+           call and must be confirmed by the client before publish."
+    owner: CLIENT — needs sign-off
+  - id: A4
+    text: "Expected durations for KPI M2 = P80 per (distance_band x time_bucket) computed on
+           baseline month 2023-01; every month is judged against that one baseline and is NOT
+           season-adjusted."
+    owner: CLIENT — confirm baseline month + percentile before publishing M2
+  - id: A5
+    text: "Each month is retrieved with a pickup-timestamp window, so 98 rows whose pickup falls
+           outside calendar 2023 are out of scope by construction (0.0003% of the dataset)."
+    owner: FDE
+  - id: A6
+    text: "The 3.4% cohort with no ratecodeid / passenger_count / store_and_fwd_flag and
+           payment_type = 0 is treated as REAL trips with missing metadata (their times,
+           distances and durations are valid), not as corrupt rows — so they stay in the KPI
+           population and are flagged (R10/R11/R13, U5)."
+    owner: CLIENT — confirm before publish
+  - id: A7
+    text: "The same 3.4% cohort has NULL airport_fee and NULL congestion_surcharge (the two
+           newest columns) while its other money fields are complete. For the R09 arithmetic
+           check a missing surcharge is read as 0; the rows stay disclosed by R10/R11/R13."
+    owner: FDE (representation) / CLIENT (semantics)
+
+limitations:                     # cannot be fixed by any rule
+  - id: L1
+    text: "TLC did not create this data (technology providers do) and disclaims accuracy —
+           absolute values carry unquantifiable meter error."
+  - id: L2
+    text: "This source has no coordinates: location is TLC's own zone id (1..265). 264/265 mean
+           'Unknown'/'NA' (about 1% of trips) and zone shapes approximate neighbourhoods, so
+           zone-level numbers are zone-level, not street-level."
+  - id: L3
+    text: "No driver/vehicle IDs, no traffic/weather feeds — analysis is association-only."
+  - id: L4
+    text: "Seasonality is now measurable (12 months) but NOT adjusted for: month-over-month M2
+           movement mixes real change with weather/season effects."
+  - id: L5
+    text: "Money fields are unreliable: airport_fee / congestion_surcharge inclusion varies by row
+           (26.7% of rows differ from the component sum by $1-2.50), and negatives are fare
+           corrections. No money metric is published; the KPI is duration-based."
+
+unknowns:                         # needs owner confirmation before it becomes a rule
+  - id: U1
+    text: "ratecodeid = 99 is not defined in the TLC user guide (213,480 rows)."
+    owner: CLIENT / TLC research@tlc.nyc.gov
+  - id: U2
+    text: "passenger_count = 0 / 7 / 8 / 9: unknown passenger, error, or courier trip? (583,414 rows)"
+    owner: CLIENT
+  - id: U3
+    text: "Zero-distance trips (2.02% of rows, rising to 3.4% by Sep-Nov) — meter fault, repositioning, or cancelled trip recorded as a fare?"
+    owner: CLIENT
+  - id: U4
+    text: "vendorid = 6 appears in 2023 (8,668 rows) but is not in the TLC user guide."
+    owner: CLIENT / TLC
+  - id: U5
+    text: "3.4% of rows carry no ratecodeid / passenger_count / store_and_fwd_flag, payment_type = 0, and NULL airport_fee / congestion_surcharge — vendor outage, or a submission path that skips this metadata?"
+    owner: CLIENT / TLC

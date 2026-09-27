@@ -1,0 +1,1316 @@
+{
+  "generated_at": "2026-09-27T09:31:27.171804+00:00",
+  "kpi": "Trip Time Reliability",
+  "decision": "Publish or HOLD the monthly trip-performance report",
+  "totals": {
+    "raw_rows": 38310122,
+    "valid_rows": 37532268,
+    "quarantined_rows": 777854,
+    "coverage": 0.979696
+  },
+  "gate": {
+    "status": "PUBLISH",
+    "reasons": [],
+    "min_valid_coverage": 0.9
+  },
+  "schema": [
+    {
+      "month": "2023-01",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-02",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-03",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-04",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-05",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-06",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-07",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-08",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-09",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-10",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-11",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    },
+    {
+      "month": "2023-12",
+      "status": "PASS",
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "header": [
+        "vendorid",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "ratecodeid",
+        "store_and_fwd_flag",
+        "pulocationid",
+        "dolocationid",
+        "payment_type",
+        "fare_amount",
+        "extra",
+        "mta_tax",
+        "tip_amount",
+        "tolls_amount",
+        "improvement_surcharge",
+        "total_amount",
+        "congestion_surcharge",
+        "airport_fee"
+      ]
+    }
+  ],
+  "row_conservation": [
+    {
+      "month": "2023-01",
+      "manifest_rows": 3066726,
+      "staged_rows": 3066726,
+      "quarantined": 46018,
+      "ok": true
+    },
+    {
+      "month": "2023-02",
+      "manifest_rows": 2914003,
+      "staged_rows": 2914003,
+      "quarantined": 41624,
+      "ok": true
+    },
+    {
+      "month": "2023-03",
+      "manifest_rows": 3403660,
+      "staged_rows": 3403660,
+      "quarantined": 49008,
+      "ok": true
+    },
+    {
+      "month": "2023-04",
+      "manifest_rows": 3288248,
+      "staged_rows": 3288248,
+      "quarantined": 40512,
+      "ok": true
+    },
+    {
+      "month": "2023-05",
+      "manifest_rows": 3513664,
+      "staged_rows": 3513664,
+      "quarantined": 47132,
+      "ok": true
+    },
+    {
+      "month": "2023-06",
+      "manifest_rows": 3307259,
+      "staged_rows": 3307259,
+      "quarantined": 47860,
+      "ok": true
+    },
+    {
+      "month": "2023-07",
+      "manifest_rows": 2907093,
+      "staged_rows": 2907093,
+      "quarantined": 50142,
+      "ok": true
+    },
+    {
+      "month": "2023-08",
+      "manifest_rows": 2824201,
+      "staged_rows": 2824201,
+      "quarantined": 57740,
+      "ok": true
+    },
+    {
+      "month": "2023-09",
+      "manifest_rows": 2846741,
+      "staged_rows": 2846741,
+      "quarantined": 98850,
+      "ok": true
+    },
+    {
+      "month": "2023-10",
+      "manifest_rows": 3522269,
+      "staged_rows": 3522269,
+      "quarantined": 121934,
+      "ok": true
+    },
+    {
+      "month": "2023-11",
+      "manifest_rows": 3339731,
+      "staged_rows": 3339731,
+      "quarantined": 103520,
+      "ok": true
+    },
+    {
+      "month": "2023-12",
+      "manifest_rows": 3376527,
+      "staged_rows": 3376527,
+      "quarantined": 73514,
+      "ok": true
+    }
+  ],
+  "integrity_checks": [
+    {
+      "month": "2023-01",
+      "api_count": 3066726,
+      "rows_staged": 3066726,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-02",
+      "api_count": 2914003,
+      "rows_staged": 2914003,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-03",
+      "api_count": 3403660,
+      "rows_staged": 3403660,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-04",
+      "api_count": 3288248,
+      "rows_staged": 3288248,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-05",
+      "api_count": 3513664,
+      "rows_staged": 3513664,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-06",
+      "api_count": 3307259,
+      "rows_staged": 3307259,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-07",
+      "api_count": 2907093,
+      "rows_staged": 2907093,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-08",
+      "api_count": 2824201,
+      "rows_staged": 2824201,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-09",
+      "api_count": 2846741,
+      "rows_staged": 2846741,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-10",
+      "api_count": 3522269,
+      "rows_staged": 3522269,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    },
+    {
+      "month": "2023-11",
+      "api_count": 3339731,
+      "rows_staged": 3339731,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 2,
+      "duplicate_rate": 6e-07,
+      "ok": true
+    },
+    {
+      "month": "2023-12",
+      "api_count": 3376527,
+      "rows_staged": 3376527,
+      "api_count_reconciled": true,
+      "composite_key_duplicates": 0,
+      "duplicate_rate": 0.0,
+      "ok": true
+    }
+  ],
+  "files": [
+    {
+      "month": "2023-01",
+      "raw_path": "data/raw/yellow_tripdata_2023-01.parquet",
+      "staged_path": "data/staged/2023-01.parquet",
+      "quarantine_path": "data/quarantine/2023-01.parquet",
+      "total_rows": 3066726,
+      "valid_rows": 3020708,
+      "quarantined_rows": 46018,
+      "coverage": 0.984994,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1121,
+        "R02": 25,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 45926,
+        "R07": 122927,
+        "R08": 25212,
+        "R09": 0,
+        "R10": 84849,
+        "R11": 71743,
+        "R12": 0,
+        "R13": 71743,
+        "R14": 41761,
+        "R15": 33544
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-02",
+      "raw_path": "data/raw/yellow_tripdata_2023-02.parquet",
+      "staged_path": "data/staged/2023-02.parquet",
+      "quarantine_path": "data/quarantine/2023-02.parquet",
+      "total_rows": 2914003,
+      "valid_rows": 2872379,
+      "quarantined_rows": 41624,
+      "coverage": 0.985716,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1265,
+        "R02": 22,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 41251,
+        "R07": 124109,
+        "R08": 24908,
+        "R09": 0,
+        "R10": 89854,
+        "R11": 76817,
+        "R12": 0,
+        "R13": 76817,
+        "R14": 37571,
+        "R15": 36381
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-03",
+      "raw_path": "data/raw/yellow_tripdata_2023-03.parquet",
+      "staged_path": "data/staged/2023-03.parquet",
+      "quarantine_path": "data/quarantine/2023-03.parquet",
+      "total_rows": 3403660,
+      "valid_rows": 3354652,
+      "quarantined_rows": 49008,
+      "coverage": 0.985601,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1453,
+        "R02": 21,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 48547,
+        "R07": 146004,
+        "R08": 29834,
+        "R09": 0,
+        "R10": 106402,
+        "R11": 87619,
+        "R12": 0,
+        "R13": 87619,
+        "R14": 34456,
+        "R15": 48099
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-04",
+      "raw_path": "data/raw/yellow_tripdata_2023-04.parquet",
+      "staged_path": "data/staged/2023-04.parquet",
+      "quarantine_path": "data/quarantine/2023-04.parquet",
+      "total_rows": 3288248,
+      "valid_rows": 3247736,
+      "quarantined_rows": 40512,
+      "coverage": 0.98768,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1172,
+        "R02": 19,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 40321,
+        "R07": 147667,
+        "R08": 30140,
+        "R09": 0,
+        "R10": 107772,
+        "R11": 90690,
+        "R12": 0,
+        "R13": 90690,
+        "R14": 36145,
+        "R15": 51611
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-05",
+      "raw_path": "data/raw/yellow_tripdata_2023-05.parquet",
+      "staged_path": "data/staged/2023-05.parquet",
+      "quarantine_path": "data/quarantine/2023-05.parquet",
+      "total_rows": 3513664,
+      "valid_rows": 3466532,
+      "quarantined_rows": 47132,
+      "coverage": 0.986586,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1169,
+        "R02": 7,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 46998,
+        "R07": 161551,
+        "R08": 32289,
+        "R09": 0,
+        "R10": 119630,
+        "R11": 101796,
+        "R12": 0,
+        "R13": 101796,
+        "R14": 38493,
+        "R15": 55323
+      },
+      "seconds": 1.0
+    },
+    {
+      "month": "2023-06",
+      "raw_path": "data/raw/yellow_tripdata_2023-06.parquet",
+      "staged_path": "data/staged/2023-06.parquet",
+      "quarantine_path": "data/quarantine/2023-06.parquet",
+      "total_rows": 3307259,
+      "valid_rows": 3259399,
+      "quarantined_rows": 47860,
+      "coverage": 0.985529,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1254,
+        "R02": 15,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 47588,
+        "R07": 154155,
+        "R08": 31592,
+        "R09": 0,
+        "R10": 115203,
+        "R11": 99887,
+        "R12": 0,
+        "R13": 99887,
+        "R14": 35344,
+        "R15": 53078
+      },
+      "seconds": 1.0
+    },
+    {
+      "month": "2023-07",
+      "raw_path": "data/raw/yellow_tripdata_2023-07.parquet",
+      "staged_path": "data/staged/2023-07.parquet",
+      "quarantine_path": "data/quarantine/2023-07.parquet",
+      "total_rows": 2907093,
+      "valid_rows": 2856951,
+      "quarantined_rows": 50142,
+      "coverage": 0.982752,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1395,
+        "R02": 13,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 49897,
+        "R07": 128859,
+        "R08": 31288,
+        "R09": 0,
+        "R10": 100325,
+        "R11": 85086,
+        "R12": 0,
+        "R13": 85086,
+        "R14": 31111,
+        "R15": 49155
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-08",
+      "raw_path": "data/raw/yellow_tripdata_2023-08.parquet",
+      "staged_path": "data/staged/2023-08.parquet",
+      "quarantine_path": "data/quarantine/2023-08.parquet",
+      "total_rows": 2824201,
+      "valid_rows": 2766461,
+      "quarantined_rows": 57740,
+      "coverage": 0.979555,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1426,
+        "R02": 23,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 57516,
+        "R07": 129821,
+        "R08": 31426,
+        "R09": 0,
+        "R10": 108074,
+        "R11": 87886,
+        "R12": 0,
+        "R13": 87886,
+        "R14": 28338,
+        "R15": 46698
+      },
+      "seconds": 1.0
+    },
+    {
+      "month": "2023-09",
+      "raw_path": "data/raw/yellow_tripdata_2023-09.parquet",
+      "staged_path": "data/staged/2023-09.parquet",
+      "quarantine_path": "data/quarantine/2023-09.parquet",
+      "total_rows": 2846741,
+      "valid_rows": 2747891,
+      "quarantined_rows": 98850,
+      "coverage": 0.965276,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1066,
+        "R02": 16,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 98640,
+        "R07": 179393,
+        "R08": 29703,
+        "R09": 0,
+        "R10": 157237,
+        "R11": 140225,
+        "R12": 0,
+        "R13": 140225,
+        "R14": 29031,
+        "R15": 45842
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-10",
+      "raw_path": "data/raw/yellow_tripdata_2023-10.parquet",
+      "staged_path": "data/staged/2023-10.parquet",
+      "quarantine_path": "data/quarantine/2023-10.parquet",
+      "total_rows": 3522269,
+      "valid_rows": 3400335,
+      "quarantined_rows": 121934,
+      "coverage": 0.965382,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1254,
+        "R02": 19,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 121752,
+        "R07": 201583,
+        "R08": 37275,
+        "R09": 0,
+        "R10": 176218,
+        "R11": 154929,
+        "R12": 0,
+        "R13": 154929,
+        "R14": 31876,
+        "R15": 51952
+      },
+      "seconds": 1.0
+    },
+    {
+      "month": "2023-11",
+      "raw_path": "data/raw/yellow_tripdata_2023-11.parquet",
+      "staged_path": "data/staged/2023-11.parquet",
+      "quarantine_path": "data/quarantine/2023-11.parquet",
+      "total_rows": 3339731,
+      "valid_rows": 3236211,
+      "quarantined_rows": 103520,
+      "coverage": 0.969003,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1918,
+        "R02": 14,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 102629,
+        "R07": 174173,
+        "R08": 37030,
+        "R09": 0,
+        "R10": 154017,
+        "R11": 132675,
+        "R12": 0,
+        "R13": 132675,
+        "R14": 27356,
+        "R15": 45940
+      },
+      "seconds": 0.9
+    },
+    {
+      "month": "2023-12",
+      "raw_path": "data/raw/yellow_tripdata_2023-12.parquet",
+      "staged_path": "data/staged/2023-12.parquet",
+      "quarantine_path": "data/quarantine/2023-12.parquet",
+      "total_rows": 3376527,
+      "valid_rows": 3303013,
+      "quarantined_rows": 73514,
+      "coverage": 0.978228,
+      "rule_fails": {
+        "R00": 0,
+        "R01": 1076,
+        "R02": 18,
+        "R03": 0,
+        "R04": 0,
+        "R05": 0,
+        "R06": 73369,
+        "R07": 222528,
+        "R08": 42767,
+        "R09": 0,
+        "R10": 203255,
+        "R11": 180003,
+        "R12": 0,
+        "R13": 180003,
+        "R14": 15731,
+        "R15": 34490
+      },
+      "seconds": 1.0
+    }
+  ],
+  "rules": [
+    {
+      "id": "R00",
+      "name": "timestamps_parseable",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "pickup & dropoff parse as TIMESTAMP",
+      "owner": "FDE (technical contract)",
+      "action": "quarantine row \u2014 a trip with unreadable time has no duration",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.001,
+        "fail": 0.01
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R01",
+      "name": "dropoff_after_pickup",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "dropoff > pickup (strictly positive duration)",
+      "owner": "FDE (technical contract)",
+      "action": "quarantine row \u2014 zero/negative duration cannot enter duration metrics",
+      "failures": 15569,
+      "fail_rate": 0.000406,
+      "tolerances": {
+        "warn": 0.01,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R02",
+      "name": "duration_within_24h",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "duration <= limits.duration_max_seconds (default 24h)",
+      "owner": "CLIENT \u2014 threshold is a judgement call (assumption A3)",
+      "action": "quarantine row \u2014 longer trips treated as meter errors until client confirms",
+      "failures": 212,
+      "fail_rate": 6e-06,
+      "tolerances": {
+        "warn": 0.001,
+        "fail": 0.01
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R03",
+      "name": "pickup_in_file_month",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "pickup timestamp falls in the month the file claims (partition integrity)",
+      "owner": "FDE (partition contract)",
+      "action": "quarantine row \u2014 otherwise monthly metrics double-count / mis-month",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.001,
+        "fail": 0.01
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R04",
+      "name": "pickup_zone_known",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "pulocationid present and a real TLC zone id (1..265)",
+      "owner": "FDE (zone contract, ids from the TLC zone lookup)",
+      "action": "quarantine row \u2014 the KPI's location dimension would be undefined",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.01,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R05",
+      "name": "dropoff_zone_known",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "dolocationid present and a real TLC zone id (1..265)",
+      "owner": "FDE (zone contract)",
+      "action": "quarantine row \u2014 same as R04 for the dropoff end",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.01,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R06",
+      "name": "distance_in_range",
+      "category": "technical",
+      "severity": "QUARANTINE",
+      "description": "0 < trip_distance <= limits.distance_max_miles",
+      "owner": "FDE (KPI is distance-banded: a trip without distance has no expected duration)",
+      "action": "quarantine row \u2014 zero/negative/absurd distance breaks the KPI banding",
+      "failures": 774434,
+      "fail_rate": 0.020215,
+      "tolerances": {
+        "warn": 0.02,
+        "fail": 0.05
+      },
+      "status": "WARN"
+    },
+    {
+      "id": "R07",
+      "name": "passenger_count_plausible",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "passenger_count in 1..6",
+      "owner": "CLIENT (unknown = U2)",
+      "action": "flag only \u2014 0/7/8/9 kept in population, reported for owner confirmation",
+      "failures": 1892770,
+      "fail_rate": 0.049407,
+      "tolerances": {
+        "warn": 0.05,
+        "fail": 0.1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R08",
+      "name": "money_non_negative",
+      "category": "technical",
+      "severity": "FLAG",
+      "description": "fare_amount >= 0 and total_amount >= 0",
+      "owner": "FDE / finance",
+      "action": "flag only \u2014 negatives are fare corrections/chargebacks; money is not in the KPI",
+      "failures": 383464,
+      "fail_rate": 0.010009,
+      "tolerances": {
+        "warn": 0.02,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R09",
+      "name": "total_matches_components",
+      "category": "technical",
+      "severity": "FLAG",
+      "description": "total_amount vs fare+extra+mta_tax+tip+tolls+improvement_surcharge+airport_fee+congestion_surcharge within limits.money_tolerance_usd (absolute; calibrated on 2023 \u2014 0% of rows exceed $5, 3.3% exceed $2.50)",
+      "owner": "finance",
+      "action": "flag only \u2014 airport/congestion fee inclusion conventions differ per row; rows kept. Missing surcharge columns are read as 0 (A7); those rows are still disclosed by R10/R11/R13",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.02,
+        "fail": 0.1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R10",
+      "name": "ratecode_known",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "ratecodeid in 1..6 (99 undefined per TLC guide = U1; null = U5)",
+      "owner": "CLIENT (U1, U5)",
+      "action": "flag only \u2014 99 and nulls kept, need owner confirmation; rate code is not in the KPI",
+      "failures": 1522836,
+      "fail_rate": 0.03975,
+      "tolerances": {
+        "warn": 0.05,
+        "fail": 0.1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R11",
+      "name": "store_and_fwd_known",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "store_and_fwd_flag in {Y,N}",
+      "owner": "CLIENT",
+      "action": "flag only \u2014 representation check (nulls belong to the U5 cohort)",
+      "failures": 1309356,
+      "fail_rate": 0.034178,
+      "tolerances": {
+        "warn": 0.05,
+        "fail": 0.1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R12",
+      "name": "vendor_known",
+      "category": "technical",
+      "severity": "FLAG",
+      "description": "vendorid in the observed set {1,2,6} (6 undocumented = U4)",
+      "owner": "FDE / TLC (U4)",
+      "action": "flag only \u2014 new vendor id accepted for now, reported for confirmation",
+      "failures": 0,
+      "fail_rate": 0.0,
+      "tolerances": {
+        "warn": 0.001,
+        "fail": 0.01
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R13",
+      "name": "payment_type_known",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "payment_type in 1..6 (0 = unknown, part of the U5 cohort)",
+      "owner": "CLIENT (U5)",
+      "action": "flag only \u2014 payment mix is descriptive, not in the KPI",
+      "failures": 1309356,
+      "fail_rate": 0.034178,
+      "tolerances": {
+        "warn": 0.05,
+        "fail": 0.1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R14",
+      "name": "pickup_zone_resolved",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "pickup zone is a real neighbourhood (not 264 Unknown / 265 NA)",
+      "owner": "FDE (disclosure)",
+      "action": "flag only \u2014 trips located 'Unknown' stay in the population but are disclosed",
+      "failures": 387213,
+      "fail_rate": 0.010107,
+      "tolerances": {
+        "warn": 0.02,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "R15",
+      "name": "dropoff_zone_resolved",
+      "category": "semantic",
+      "severity": "FLAG",
+      "description": "dropoff zone is a real neighbourhood (not 264/265)",
+      "owner": "FDE (disclosure)",
+      "action": "flag only \u2014 same as R14 for the dropoff end",
+      "failures": 552113,
+      "fail_rate": 0.014412,
+      "tolerances": {
+        "warn": 0.02,
+        "fail": 0.05
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U1",
+      "name": "ratecode_99_undefined",
+      "category": "semantic",
+      "severity": "REPORT",
+      "description": "Meaning of ratecodeid = 99 is absent from the TLC user guide",
+      "owner": "CLIENT / TLC research@tlc.nyc.gov",
+      "action": "UNKNOWN \u2014 cannot encode a rule without owner definition",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "213,480 rows (0.56%) in 2023; detected as failures of R10."
+    },
+    {
+      "id": "U2",
+      "name": "passenger_zero_or_high",
+      "category": "semantic",
+      "severity": "REPORT",
+      "description": "passenger_count 0 / 7 / 8 / 9 \u2014 unknown vs error vs courier",
+      "owner": "CLIENT",
+      "action": "UNKNOWN \u2014 kept in population, flagged by R07",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "583,414 rows (1.52%) in 2023; needs client definition."
+    },
+    {
+      "id": "U3",
+      "name": "zero_distance_positive_fare",
+      "category": "semantic",
+      "severity": "REPORT",
+      "description": "Zero trip_distance with positive fare \u2014 meter fault, repositioning or GPS fault?",
+      "owner": "CLIENT",
+      "action": "UNKNOWN \u2014 quarantined by R06 for KPI safety, cause unresolved",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "773,445 rows (2.02%) in 2023, rising to 3.4% by Sep-Nov; subset of R06 failures."
+    },
+    {
+      "id": "U4",
+      "name": "vendor_id_6_undocumented",
+      "category": "semantic",
+      "severity": "REPORT",
+      "description": "vendorid = 6 appears in 2023 but is not in the TLC user guide",
+      "owner": "CLIENT / TLC",
+      "action": "UNKNOWN \u2014 accepted in R12 for now, flagged for owner confirmation",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "8,668 rows (0.02%) in 2023."
+    },
+    {
+      "id": "U5",
+      "name": "missing_trip_metadata_cohort",
+      "category": "semantic",
+      "severity": "REPORT",
+      "description": "3.4% of 2023 rows have no ratecodeid, no passenger_count, no store_and_fwd_flag and payment_type = 0 \u2014 real trips with missing metadata?",
+      "owner": "CLIENT / TLC",
+      "action": "UNKNOWN \u2014 rows kept (their times, distance and duration are valid), flagged by R10/R11/R13",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "1,309,356 rows; p50 duration 16.6 min, avg distance 18.5 mi \u2014 looks like real trips."
+    },
+    {
+      "id": "L1",
+      "name": "meter_accuracy_disclaimer",
+      "category": "organizational",
+      "severity": "REPORT",
+      "description": "TLC did not create the data and disclaims accuracy",
+      "owner": "TLC (published limitation)",
+      "action": "LIMITATION \u2014 recorded, cannot be fixed by validation",
+      "failures": null,
+      "fail_rate": null,
+      "tolerances": null,
+      "status": "UNKNOWN",
+      "evidence": "TLC trip-record page: 'The trip data was not created by the TLC\u2026'"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "1 row = 1 completed trip (TLC user guide). No trip ID exists, so the grain is enforced by full-row conservation (staged + quarantined == raw) plus a composite-key duplicate audit, instead of by a key.",
+      "owner": "FDE / client data lead"
+    },
+    {
+      "id": "A2",
+      "text": "Socrata delivers the 2023 schema in lowercase with quoted CSV headers and no coordinates. That is a REPRESENTATION difference (transport encoding + casing), not a semantic one, so it is normalised in retrieval and never guessed.",
+      "owner": "FDE (representation vs semantics call)"
+    },
+    {
+      "id": "A3",
+      "text": "Trips longer than 24h are meter errors, not real trips. Threshold is a judgement call and must be confirmed by the client before publish.",
+      "owner": "CLIENT \u2014 needs sign-off"
+    },
+    {
+      "id": "A4",
+      "text": "Expected durations for KPI M2 = P80 per (distance_band x time_bucket) computed on baseline month 2023-01; every month is judged against that one baseline and is NOT season-adjusted.",
+      "owner": "CLIENT \u2014 confirm baseline month + percentile before publishing M2"
+    },
+    {
+      "id": "A5",
+      "text": "Each month is retrieved with a pickup-timestamp window, so 98 rows whose pickup falls outside calendar 2023 are out of scope by construction (0.0003% of the dataset).",
+      "owner": "FDE"
+    },
+    {
+      "id": "A6",
+      "text": "The 3.4% cohort with no ratecodeid / passenger_count / store_and_fwd_flag and payment_type = 0 is treated as REAL trips with missing metadata (their times, distances and durations are valid), not as corrupt rows \u2014 so they stay in the KPI population and are flagged (R10/R11/R13, U5).",
+      "owner": "CLIENT \u2014 confirm before publish"
+    },
+    {
+      "id": "A7",
+      "text": "The same 3.4% cohort has NULL airport_fee and NULL congestion_surcharge (the two newest columns) while its other money fields are complete. For the R09 arithmetic check a missing surcharge is read as 0; the rows stay disclosed by R10/R11/R13.",
+      "owner": "FDE (representation) / CLIENT (semantics)"
+    }
+  ],
+  "limitations": [
+    {
+      "id": "L1",
+      "text": "TLC did not create this data (technology providers do) and disclaims accuracy \u2014 absolute values carry unquantifiable meter error."
+    },
+    {
+      "id": "L2",
+      "text": "This source has no coordinates: location is TLC's own zone id (1..265). 264/265 mean 'Unknown'/'NA' (about 1% of trips) and zone shapes approximate neighbourhoods, so zone-level numbers are zone-level, not street-level."
+    },
+    {
+      "id": "L3",
+      "text": "No driver/vehicle IDs, no traffic/weather feeds \u2014 analysis is association-only."
+    },
+    {
+      "id": "L4",
+      "text": "Seasonality is now measurable (12 months) but NOT adjusted for: month-over-month M2 movement mixes real change with weather/season effects."
+    },
+    {
+      "id": "L5",
+      "text": "Money fields are unreliable: airport_fee / congestion_surcharge inclusion varies by row (26.7% of rows differ from the component sum by $1-2.50), and negatives are fare corrections. No money metric is published; the KPI is duration-based."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "U1",
+      "text": "ratecodeid = 99 is not defined in the TLC user guide (213,480 rows).",
+      "owner": "CLIENT / TLC research@tlc.nyc.gov"
+    },
+    {
+      "id": "U2",
+      "text": "passenger_count = 0 / 7 / 8 / 9: unknown passenger, error, or courier trip? (583,414 rows)",
+      "owner": "CLIENT"
+    },
+    {
+      "id": "U3",
+      "text": "Zero-distance trips (2.02% of rows, rising to 3.4% by Sep-Nov) \u2014 meter fault, repositioning, or cancelled trip recorded as a fare?",
+      "owner": "CLIENT"
+    },
+    {
+      "id": "U4",
+      "text": "vendorid = 6 appears in 2023 (8,668 rows) but is not in the TLC user guide.",
+      "owner": "CLIENT / TLC"
+    },
+    {
+      "id": "U5",
+      "text": "3.4% of rows carry no ratecodeid / passenger_count / store_and_fwd_flag, payment_type = 0, and NULL airport_fee / congestion_surcharge \u2014 vendor outage, or a submission path that skips this metadata?",
+      "owner": "CLIENT / TLC"
+    }
+  ]
+}
