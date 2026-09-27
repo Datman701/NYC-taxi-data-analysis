@@ -199,7 +199,7 @@ publish — see L5).
 
 ### A bug this surfaced
 
-Chasing that cohort exposed a flaw in my own validation code: a rule evaluated over a **missing**
+Chasing that cohort exposed a flaw in my validation code: a rule evaluated over a **missing**
 value was being counted as a **pass**. `CASE WHEN NOT ok` returns NULL when `ok` is NULL, and NULL
 fell through to "no failure". With 1.3M missing rate codes I was under-reporting my own data
 quality. It now reads `COALESCE(ok, false)` — **a rule that cannot be evaluated counts as failed** —
@@ -208,9 +208,6 @@ and there's a test that locks the behaviour in.
 ## 6. How the trips are modelled
 
 ### The grain: one row = one valid trip
-
-"Grain" just means *what does one row mean?* Here: one trip. It sounds obvious, but if a row meant
-"one passenger" or "one fare line", every number above would be wrong.
 
 The catch: **the data has no trip ID**, so we can't prove two rows are different trips. Two guards
 replace that missing key:
