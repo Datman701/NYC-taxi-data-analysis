@@ -10,6 +10,8 @@ Data") — **12 months, 38,310,122 trips**. The pipeline re-runs in **23 seconds
 📊 **[Evidence dashboard](output/evidence_table.md)** — the results table, regenerated from the
 pipeline's own output, so it can never disagree with the numbers.
 
+Note : the flashEats assignment is in the 2nd branch
+
 ---
 
 ## At a glance
